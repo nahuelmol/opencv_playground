@@ -1,5 +1,5 @@
 import cv2
-from functionalities import random_colorizer
+from functionalities import random_colorizer, copying_a_part
 
 img = cv2.imread('assets/MichaelSchumacher.jpg',1)
 img_gray_scale = cv2.imread('assets/MichaelSchumacher.jpg',0)
@@ -17,6 +17,7 @@ cv2.imwrite('{}\schumi2.jpg'.format(out_folder),img_gray_scale)
 print(img.shape)
 
 random_colorizer.init_function()
+copying_a_part.init_function()
 
 cv2.imshow('Image',img_gray_scale)
 cv2.waitKey(0)
